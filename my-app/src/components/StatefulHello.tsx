@@ -14,7 +14,7 @@ interface HelloState {
 class Hello extends React.Component<HelloProps, HelloState> {
   constructor(props: HelloProps) {
     super(props);
-    this.state = { currentEnthusiasm: props.enthusiasmLevel || 1 };
+    this.state = { currentEnthusiasm: (props.enthusiasmLevel || props.enthusiasmLevel === 0) ? props.enthusiasmLevel : 1 };
   }
 
   onIncrement = () => this.updateEnthusiasm(this.state.currentEnthusiasm + 1);
