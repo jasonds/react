@@ -1,4 +1,5 @@
-export interface StoreState {
-  languageName: string;
-  enthusiasmLevel: number;
+import { IReduxHelloState } from "./ReduxHelloState";
+
+export interface IGlobalState {
+  reduxHelloState: IReduxHelloState
 }
