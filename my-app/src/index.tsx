@@ -10,11 +10,13 @@ import { IGlobalState } from './types/index';
 
 import ReduxHello from './containers/ReduxHello';
 import { Provider } from 'react-redux';
+import App from './App';
 
 const store: Store<IGlobalState> = createStore(rootReducer);
 
 ReactDOM.render(
   <Provider store={store}>
+    <App />
     <ReduxHello />
   </Provider>,
   document.getElementById('root') as HTMLElement
