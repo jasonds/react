@@ -2,6 +2,7 @@ import * as React from 'react';
 import './App.css';
 
 import Hello from './components/Hello';
+import StatefulHello from './components/StatefulHello';
 
 import logo from './logo.svg';
 
@@ -16,7 +17,8 @@ class App extends React.Component {
         <p className="App-intro">
           To get started, edit <code>src/App.tsx</code> and save to reload.
         </p>
-        <Hello name="TypeScript" enthusiasmLevel={10} />,
+        <Hello name="SFC TypeScript" enthusiasmLevel={10} />
+        <StatefulHello name="Stateful TypeScript" enthusiasmLevel={5} />
       </div>
     );
   }
