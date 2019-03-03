@@ -35,9 +35,9 @@ const Hello: React.SFC<HelloProps> = ({ name, enthusiasmLevel = 1 }: HelloProps)
   );
 }
 
-Hello.defaultProps = {
-  enthusiasmLevel: 1
-}
+// Hello.defaultProps = {
+//   enthusiasmLevel: 1
+// }
 
 export default Hello;
 
