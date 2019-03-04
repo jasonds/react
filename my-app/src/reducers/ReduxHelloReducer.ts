@@ -1,5 +1,5 @@
-import { EnthusiasmAction } from '../actions';
-import { IReduxHelloState } from '../types/ReduxHelloState';
+import { EnthusiasmAction } from '../actions/Enthusiam';
+import { IReduxHelloState } from '../types/IReduxHelloState';
 import { INCREMENT_ENTHUSIASM, DECREMENT_ENTHUSIASM } from '../constants/index';
 
 export const initialState: IReduxHelloState = {

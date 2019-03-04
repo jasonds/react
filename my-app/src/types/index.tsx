@@ -1,5 +1,7 @@
-import { IReduxHelloState } from "./ReduxHelloState";
+import { IReduxHelloState } from "./IReduxHelloState";
+import { IUserState } from './IUserState';
 
 export interface IGlobalState {
-  reduxHelloState: IReduxHelloState
+  reduxHelloState: IReduxHelloState,
+  loginState: IUserState
 }

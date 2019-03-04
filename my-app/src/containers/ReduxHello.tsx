@@ -1,6 +1,6 @@
-import Hello from '../components/ReduxHello';
+import ReduxHello from '../components/ReduxHello';
 import { ReduxHelloProps } from 'src/components/ReduxHello';
-import * as actions from '../actions/';
+import * as actions from '../actions/Enthusiam';
 // import onIncrement = actions.incrementEnthusiasm;
 // import onDecrement = actions.decrementEnthusiasm;
 import { IGlobalState } from '../types/index';
@@ -20,4 +20,4 @@ export function mapDispatchToProps(dispatch: Dispatch<actions.EnthusiasmAction>)
 }
 
 //export default connect(mapStateToProps, { onIncrement, onDecrement })(Hello);
-export default connect(mapStateToProps, mapDispatchToProps)(Hello);
+export default connect(mapStateToProps, mapDispatchToProps)(ReduxHello);
